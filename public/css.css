@@ -45,9 +45,14 @@ button{
 a{
     border-radius: 30px;
     background-color: pink;
+    border:2px solid pink;
     height: 55px;
     width: 55px;
     margin: 5px;
+}
+a:hover{
+    background-color: white;
+    border:2px solid gray;
 }
 #turn{
     color: Blue;
