@@ -1,0 +1,30 @@
+body {
+    background-image:url("");
+    background-color: cyan;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display:flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items:center;
+    color:blue
+}
+body *{    
+    display:flex;
+    flex-flow: column;
+    justify-content:center;
+    align-items:center;
+    color:blue
+}
+button{
+    color:blue;
+    background-color: gold;
+    border-radius: 12px;
+    height:30px;
+    width:200px;
+    outline: none;
+}
+#x{
+    margin-top: 200px;
+}
