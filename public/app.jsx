@@ -1,13 +1,13 @@
 class App extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {    }
+      this.state = {}
     }
     render () {
-      return (<div id="x">
-        <br></br>
-        <button>Checkout</button>
-      </div>)
+      return (<div id='o'><div id='turn'>Connect Four</div>
+       <div id="x">
+        <button onClick={a}>Play</button>
+        </div></div>)
     }
   }
   
