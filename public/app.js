@@ -138,6 +138,7 @@ let win=(circle,x)=>{
 }
 
 let ender=()=>{
+    winner=true;
     var text=document.getElementById('turn')
     if(turn===1){text.innerText="Blue Wins";text.style.color='blue'}
     else{text.innerText="Red Wins";text.style.color='red'}
