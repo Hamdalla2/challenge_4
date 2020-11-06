@@ -5,9 +5,11 @@ class App extends React.Component {
     }
     render () {
       return (<div id='o'><div id='turn'>Connect Four</div>
-       <div id="x">
+        <div id="x">
         <button onClick={a}>Play</button>
-        </div></div>)
+        </div>
+        <div><button onClick={reset}>Reset</button></div> 
+        </div>)
     }
   }
   
