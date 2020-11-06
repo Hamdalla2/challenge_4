@@ -58,14 +58,13 @@ let color=(circle,x)=>{
         var text=document.getElementById('turn')
         if(turn===0){circle.style.backgroundColor="blue";++turn;text.innerText="Red\'s Turn";text.style.color='red'}
         else if(turn===1){circle.style.backgroundColor="red";--turn;text.innerText="Blue\'s Turn";text.style.color='blue'}
+        win(circle,x)
     }
-    win(circle,x)
 }
 
 //Check for Win
 let win=(circle,x)=>{
     id=Number(circle.id.slice(1))
-    console.log(id)
     
     right1=document.getElementById(`c${id+6}`)
     right2=document.getElementById(`c${id+12}`)
@@ -113,30 +112,30 @@ let win=(circle,x)=>{
     }
     //Right Diagonal Win
     if(diaright1&&diaright2&&diaright3){
-        if(circle.style.backgroundColor===diaright1.style.backgroundColor&&circle.style.backgroundColor===diaright2.style.backgroundColor&&circle.style.backgroundColor===diaright3.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaright1.style.backgroundColor="gold";diaright2.style.backgroundColor="gold";diaright3.style.backgroundColor="gold";ender()}
-        }
-        if(diaright1&&diaright2&&dialeft1){
-        if(circle.style.backgroundColor===diaright1.style.backgroundColor&&circle.style.backgroundColor===diaright2.style.backgroundColor&&circle.style.backgroundColor===dialeft1.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaright1.style.backgroundColor="gold";diaright2.style.backgroundColor="gold";dialeft1.style.backgroundColor="gold";ender()}
-        }
-        if(diaright1&&dialeft2&&dialeft1){
-        if(circle.style.backgroundColor===diaright1.style.backgroundColor&&circle.style.backgroundColor===dialeft2.style.backgroundColor&&circle.style.backgroundColor===dialeft1.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaright1.style.backgroundColor="gold";dialeft2.style.backgroundColor="gold";dialeft1.style.backgroundColor="gold";ender()}
-        }
-        if(dialeft1&&dialeft2&&dialeft3){
-        if(circle.style.backgroundColor===dialeft1.style.backgroundColor&&circle.style.backgroundColor===dialeft2.style.backgroundColor&&circle.style.backgroundColor===dialeft3.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";dialeft1.style.backgroundColor="gold";dialeft2.style.backgroundColor="gold";dialeft3.style.backgroundColor="gold";ender()}
-        }
+    if(circle.style.backgroundColor===diaright1.style.backgroundColor&&circle.style.backgroundColor===diaright2.style.backgroundColor&&circle.style.backgroundColor===diaright3.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaright1.style.backgroundColor="gold";diaright2.style.backgroundColor="gold";diaright3.style.backgroundColor="gold";ender()}
+    }
+    if(diaright1&&diaright2&&dialeft1){
+    if(circle.style.backgroundColor===diaright1.style.backgroundColor&&circle.style.backgroundColor===diaright2.style.backgroundColor&&circle.style.backgroundColor===dialeft1.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaright1.style.backgroundColor="gold";diaright2.style.backgroundColor="gold";dialeft1.style.backgroundColor="gold";ender()}
+    }
+    if(diaright1&&dialeft2&&dialeft1){
+    if(circle.style.backgroundColor===diaright1.style.backgroundColor&&circle.style.backgroundColor===dialeft2.style.backgroundColor&&circle.style.backgroundColor===dialeft1.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaright1.style.backgroundColor="gold";dialeft2.style.backgroundColor="gold";dialeft1.style.backgroundColor="gold";ender()}
+    }
+    if(dialeft1&&dialeft2&&dialeft3){
+    if(circle.style.backgroundColor===dialeft1.style.backgroundColor&&circle.style.backgroundColor===dialeft2.style.backgroundColor&&circle.style.backgroundColor===dialeft3.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";dialeft1.style.backgroundColor="gold";dialeft2.style.backgroundColor="gold";dialeft3.style.backgroundColor="gold";ender()}
+    }
     //Left Diagonal Win
     if(diaup1&&diaup2&&diaup3){
-        if(circle.style.backgroundColor===diaup1.style.backgroundColor&&circle.style.backgroundColor===diaup2.style.backgroundColor&&circle.style.backgroundColor===diaup3.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaup1.style.backgroundColor="gold";diaup2.style.backgroundColor="gold";diaup3.style.backgroundColor="gold";ender()}
-        }
-        if(diaup1&&diaup2&&diadown1){
-        if(circle.style.backgroundColor===diaup1.style.backgroundColor&&circle.style.backgroundColor===diaup2.style.backgroundColor&&circle.style.backgroundColor===diadown1.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaup1.style.backgroundColor="gold";diaup2.style.backgroundColor="gold";diadown1.style.backgroundColor="gold";ender()}
-        }
-        if(diaup1&&diadown2&&diadown1){
-        if(circle.style.backgroundColor===diaup1.style.backgroundColor&&circle.style.backgroundColor===diadown2.style.backgroundColor&&circle.style.backgroundColor===diadown1.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaup1.style.backgroundColor="gold";diadown2.style.backgroundColor="gold";diadown1.style.backgroundColor="gold";ender()}
-        }
-        if(diadown1&&diadown2&&diadown3){
-        if(circle.style.backgroundColor===diadown1.style.backgroundColor&&circle.style.backgroundColor===diadown2.style.backgroundColor&&circle.style.backgroundColor===diadown3.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";dialeft1.style.backgroundColor="gold";dialeft2.style.backgroundColor="gold";dialeft3.style.backgroundColor="gold";ender()}
-        }
+    if(circle.style.backgroundColor===diaup1.style.backgroundColor&&circle.style.backgroundColor===diaup2.style.backgroundColor&&circle.style.backgroundColor===diaup3.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaup1.style.backgroundColor="gold";diaup2.style.backgroundColor="gold";diaup3.style.backgroundColor="gold";ender()}
+    }
+    if(diaup1&&diaup2&&diadown1){
+    if(circle.style.backgroundColor===diaup1.style.backgroundColor&&circle.style.backgroundColor===diaup2.style.backgroundColor&&circle.style.backgroundColor===diadown1.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaup1.style.backgroundColor="gold";diaup2.style.backgroundColor="gold";diadown1.style.backgroundColor="gold";ender()}
+    }
+    if(diaup1&&diadown2&&diadown1){
+    if(circle.style.backgroundColor===diaup1.style.backgroundColor&&circle.style.backgroundColor===diadown2.style.backgroundColor&&circle.style.backgroundColor===diadown1.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";diaup1.style.backgroundColor="gold";diadown2.style.backgroundColor="gold";diadown1.style.backgroundColor="gold";ender()}
+    }
+    if(diadown1&&diadown2&&diadown3){
+    if(circle.style.backgroundColor===diadown1.style.backgroundColor&&circle.style.backgroundColor===diadown2.style.backgroundColor&&circle.style.backgroundColor===diadown3.style.backgroundColor){winner=true;circle.style.backgroundColor="gold";dialeft1.style.backgroundColor="gold";dialeft2.style.backgroundColor="gold";dialeft3.style.backgroundColor="gold";ender()}
+    }
 
 }
 

@@ -30,17 +30,17 @@ div *{
     align-items:center;
     color:gold; 
 }
+.x{
+    background-color: purple;
+    border:12px solid purple;
+    border-radius: 12px;
+}
 button{
     background-color: blue;
     border-radius: 50px;
-    height:70px;
-    width:200px;
+    height:30px;
+    width:170px;
     outline: none;
-}
-#x{
-    background-color: purple;
-    border:20px solid purple;
-    border-radius: 12px;
 }
 a{
     border-radius: 30px;
@@ -58,5 +58,4 @@ a:hover{
     color: Blue;
     text-shadow: 5px 5px 10px blue ;
     font-size:50px;
-    margin-top: 40px;
 }
