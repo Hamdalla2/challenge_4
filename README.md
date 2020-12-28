@@ -1,4 +1,4 @@
-# Online Shopping Simulation Game
-- [Shopping](https://marketxoro.herokuapp.com/)
+# Connect Four
+- [play](https://connectfourxoro.herokuapp.com/)
 
-[![pic](https://i.imgur.com/g6OoGxl.png)](https://i.imgur.com/g6OoGxl.png)
+[![pic](https://i.imgur.com/SNsj9dT.png)](https://i.imgur.com/SNsj9dT.png)
